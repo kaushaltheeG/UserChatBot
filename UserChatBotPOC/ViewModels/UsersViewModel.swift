@@ -10,18 +10,14 @@ import Combine
 
 class UsersViewModel: ObservableObject {
     
-    @Published var users: [User]
-    @Published var showUser: User?
-    private let restService: RESTService = RESTService()
+    @Published var users: [User] = []
+    @Published var showUser: User? = nil
+    private let restService: RESTService
     private var cancellables = Set<AnyCancellable>()
     private var url: String = "https://jsonplaceholder.typicode.com/users"
     
-    init(users: [User], user: User? = nil) {
-        self.users = users
-        self.showUser = user
-        
-        // invokes to fill users array
-        getUsers()
+    init(restService: RESTService) {
+        self.restService = restService
     }
     
     func getUsers() {
@@ -36,6 +32,7 @@ class UsersViewModel: ObservableObject {
             }
             receiveValue: { [weak self] usersData in
                 self?.users = usersData
+                print(usersData)
                 self?.showUser = nil
             }
             .store(in: &cancellables)

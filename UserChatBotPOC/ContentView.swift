@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
-                NavigationLink(destination: UsersIndex(), label: {
+                NavigationLink(destination: UsersIndex(restService: RESTService()), label: {
                     Text("Chat with User")
                         .font(.headline)
                         .padding()

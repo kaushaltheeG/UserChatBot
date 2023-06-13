@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		600659AE2A38CC330045942F /* UsersIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600659AD2A38CC330045942F /* UsersIndex.swift */; };
+		600659AE2A38CC330045942F /* UsersIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600659AD2A38CC330045942F /* UsersIndexView.swift */; };
+		600659B12A38CEC10045942F /* UserPannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600659B02A38CEC10045942F /* UserPannelView.swift */; };
+		600659B32A38CFB80045942F /* UserShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600659B22A38CFB80045942F /* UserShowView.swift */; };
 		60BE554B2A380711002AC11D /* UserChatBotPOCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE554A2A380711002AC11D /* UserChatBotPOCApp.swift */; };
 		60BE554D2A380711002AC11D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE554C2A380711002AC11D /* ContentView.swift */; };
 		60BE554F2A380714002AC11D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60BE554E2A380714002AC11D /* Assets.xcassets */; };
@@ -18,7 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		600659AD2A38CC330045942F /* UsersIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersIndex.swift; sourceTree = "<group>"; };
+		600659AD2A38CC330045942F /* UsersIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersIndexView.swift; sourceTree = "<group>"; };
+		600659B02A38CEC10045942F /* UserPannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPannelView.swift; sourceTree = "<group>"; };
+		600659B22A38CFB80045942F /* UserShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserShowView.swift; sourceTree = "<group>"; };
 		60BE55472A380711002AC11D /* UserChatBotPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserChatBotPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60BE554A2A380711002AC11D /* UserChatBotPOCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserChatBotPOCApp.swift; sourceTree = "<group>"; };
 		60BE554C2A380711002AC11D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		600659AF2A38CE960045942F /* UsersIndex */ = {
+			isa = PBXGroup;
+			children = (
+				600659AD2A38CC330045942F /* UsersIndexView.swift */,
+				600659B02A38CEC10045942F /* UserPannelView.swift */,
+			);
+			path = UsersIndex;
+			sourceTree = "<group>";
+		};
 		60BE553E2A380711002AC11D = {
 			isa = PBXGroup;
 			children = (
@@ -90,7 +103,8 @@
 		60BE55592A3807C8002AC11D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				600659AD2A38CC330045942F /* UsersIndex.swift */,
+				600659AF2A38CE960045942F /* UsersIndex */,
+				600659B22A38CFB80045942F /* UserShowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,12 +195,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				600659B32A38CFB80045942F /* UserShowView.swift in Sources */,
 				60BE554D2A380711002AC11D /* ContentView.swift in Sources */,
 				60BE554B2A380711002AC11D /* UserChatBotPOCApp.swift in Sources */,
+				600659B12A38CEC10045942F /* UserPannelView.swift in Sources */,
 				60BE55612A381D6B002AC11D /* UserModel.swift in Sources */,
 				60BE555D2A380907002AC11D /* RESTService.swift in Sources */,
 				60BE55632A38287D002AC11D /* UsersViewModel.swift in Sources */,
-				600659AE2A38CC330045942F /* UsersIndex.swift in Sources */,
+				600659AE2A38CC330045942F /* UsersIndexView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
