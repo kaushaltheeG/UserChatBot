@@ -11,6 +11,7 @@
 		60BE554D2A380711002AC11D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE554C2A380711002AC11D /* ContentView.swift */; };
 		60BE554F2A380714002AC11D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60BE554E2A380714002AC11D /* Assets.xcassets */; };
 		60BE55522A380714002AC11D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60BE55512A380714002AC11D /* Preview Assets.xcassets */; };
+		60BE555D2A380907002AC11D /* RESTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE555C2A380907002AC11D /* RESTService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		60BE554C2A380711002AC11D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		60BE554E2A380714002AC11D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60BE55512A380714002AC11D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		60BE555C2A380907002AC11D /* RESTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,10 @@
 		60BE55492A380711002AC11D /* UserChatBotPOC */ = {
 			isa = PBXGroup;
 			children = (
+				60BE555B2A3807E3002AC11D /* ViewModels */,
+				60BE555A2A3807D4002AC11D /* Models */,
+				60BE55592A3807C8002AC11D /* Views */,
+				60BE55582A3807C1002AC11D /* Services */,
 				60BE554A2A380711002AC11D /* UserChatBotPOCApp.swift */,
 				60BE554C2A380711002AC11D /* ContentView.swift */,
 				60BE554E2A380714002AC11D /* Assets.xcassets */,
@@ -65,6 +71,35 @@
 				60BE55512A380714002AC11D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		60BE55582A3807C1002AC11D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				60BE555C2A380907002AC11D /* RESTService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		60BE55592A3807C8002AC11D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		60BE555A2A3807D4002AC11D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		60BE555B2A3807E3002AC11D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +174,7 @@
 			files = (
 				60BE554D2A380711002AC11D /* ContentView.swift in Sources */,
 				60BE554B2A380711002AC11D /* UserChatBotPOCApp.swift in Sources */,
+				60BE555D2A380907002AC11D /* RESTService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
