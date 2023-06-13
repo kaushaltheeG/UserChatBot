@@ -12,9 +12,9 @@ final class RESTService: ObservableObject {
     
     private var cancellables = Set<AnyCancellable>()
     
-    func getRequest<T: Decodable>(urlString: String, id: Int?=nil, type: T.Type) -> Future<[T], Error> {
+    func getRequest<T: Decodable>(urlString: String, type: T.Type) -> Future<[T], Error> {
         return Future<[T], Error> { [weak self] promise in
-            guard let self = self, let url = URL(string: urlString.appending(id == nil ? "" : "/\(id ?? 0)")) else {
+            guard let self = self, let url = URL(string: urlString) else {
                 return promise(.failure(RESTServiceError.invalidURL))
             }
             
