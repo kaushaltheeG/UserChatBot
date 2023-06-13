@@ -17,7 +17,7 @@ struct UserPannelView: View {
     }
     
     var body: some View {
-            NavigationLink(destination: UserShowView(), label: {
+        NavigationLink(destination: UserShowView(restService: RESTService(), userId: id), label: {
                 HStack(spacing: 0){
                     Text(String(name.prefix(1)))
                         .padding()

@@ -16,14 +16,12 @@ struct UsersIndex: View {
     }
     
     var body: some View {
-        NavigationView {
-            VStack(spacing: 5) {
-                ForEach(usersVm.users) { user in
-                    UserPannelView(name: user.name, id: user.id)
-                }
+        VStack(spacing: 5) {
+            ForEach(usersVm.users) { user in
+                UserPannelView(name: user.name, id: user.id)
             }
-            .navigationTitle("Users")
         }
+        .navigationTitle("Users")
         .onAppear {
             usersVm.getUsers()
         }
