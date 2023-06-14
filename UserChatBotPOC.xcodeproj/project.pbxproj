@@ -10,6 +10,12 @@
 		600659AE2A38CC330045942F /* UsersIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600659AD2A38CC330045942F /* UsersIndexView.swift */; };
 		600659B12A38CEC10045942F /* UserPannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600659B02A38CEC10045942F /* UserPannelView.swift */; };
 		600659B32A38CFB80045942F /* UserShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600659B22A38CFB80045942F /* UserShowView.swift */; };
+		6038B12D2A39129900162C6E /* RESTService_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6038B12C2A39129900162C6E /* RESTService_Test.swift */; };
+		6038B1302A3912CD00162C6E /* UsersViewModel_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6038B12F2A3912CD00162C6E /* UsersViewModel_Test.swift */; };
+		6038B1362A3918E400162C6E /* RESTServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6038B1352A3918E400162C6E /* RESTServiceProtocol.swift */; };
+		6038B1382A3919D000162C6E /* MockRESTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6038B1372A3919D000162C6E /* MockRESTService.swift */; };
+		6038B13B2A391E5400162C6E /* UsersList_Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6038B13A2A391E5400162C6E /* UsersList_Mock.swift */; };
+		6038B13D2A392A7700162C6E /* Responses_Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6038B13C2A392A7700162C6E /* Responses_Mock.swift */; };
 		60BE554B2A380711002AC11D /* UserChatBotPOCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE554A2A380711002AC11D /* UserChatBotPOCApp.swift */; };
 		60BE554D2A380711002AC11D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE554C2A380711002AC11D /* ContentView.swift */; };
 		60BE554F2A380714002AC11D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60BE554E2A380714002AC11D /* Assets.xcassets */; };
@@ -19,10 +25,27 @@
 		60BE55632A38287D002AC11D /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE55622A38287D002AC11D /* UsersViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6038B1262A39123800162C6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60BE553F2A380711002AC11D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60BE55462A380711002AC11D;
+			remoteInfo = UserChatBotPOC;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		600659AD2A38CC330045942F /* UsersIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersIndexView.swift; sourceTree = "<group>"; };
 		600659B02A38CEC10045942F /* UserPannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPannelView.swift; sourceTree = "<group>"; };
 		600659B22A38CFB80045942F /* UserShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserShowView.swift; sourceTree = "<group>"; };
+		6038B1222A39123800162C6E /* UserChatBotPOC_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserChatBotPOC_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6038B12C2A39129900162C6E /* RESTService_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTService_Test.swift; sourceTree = "<group>"; };
+		6038B12F2A3912CD00162C6E /* UsersViewModel_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel_Test.swift; sourceTree = "<group>"; };
+		6038B1352A3918E400162C6E /* RESTServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTServiceProtocol.swift; sourceTree = "<group>"; };
+		6038B1372A3919D000162C6E /* MockRESTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRESTService.swift; sourceTree = "<group>"; };
+		6038B13A2A391E5400162C6E /* UsersList_Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersList_Mock.swift; sourceTree = "<group>"; };
+		6038B13C2A392A7700162C6E /* Responses_Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses_Mock.swift; sourceTree = "<group>"; };
 		60BE55472A380711002AC11D /* UserChatBotPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserChatBotPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60BE554A2A380711002AC11D /* UserChatBotPOCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserChatBotPOCApp.swift; sourceTree = "<group>"; };
 		60BE554C2A380711002AC11D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +57,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6038B11F2A39123800162C6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		60BE55442A380711002AC11D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,10 +83,79 @@
 			path = UsersIndex;
 			sourceTree = "<group>";
 		};
+		6038B1232A39123800162C6E /* UserChatBotPOC_UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				6038B1312A39181100162C6E /* Mocks */,
+				6038B12E2A3912AF00162C6E /* ViewModels_Test */,
+				6038B12B2A39127900162C6E /* Services_Test */,
+			);
+			path = UserChatBotPOC_UnitTests;
+			sourceTree = "<group>";
+		};
+		6038B12B2A39127900162C6E /* Services_Test */ = {
+			isa = PBXGroup;
+			children = (
+				6038B12C2A39129900162C6E /* RESTService_Test.swift */,
+			);
+			path = Services_Test;
+			sourceTree = "<group>";
+		};
+		6038B12E2A3912AF00162C6E /* ViewModels_Test */ = {
+			isa = PBXGroup;
+			children = (
+				6038B12F2A3912CD00162C6E /* UsersViewModel_Test.swift */,
+			);
+			path = ViewModels_Test;
+			sourceTree = "<group>";
+		};
+		6038B1312A39181100162C6E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				6038B1392A391DBB00162C6E /* Data */,
+				6038B1332A39183C00162C6E /* ViewModels_Mock */,
+				6038B1322A39182200162C6E /* Services_Mock */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		6038B1322A39182200162C6E /* Services_Mock */ = {
+			isa = PBXGroup;
+			children = (
+				6038B1372A3919D000162C6E /* MockRESTService.swift */,
+			);
+			path = Services_Mock;
+			sourceTree = "<group>";
+		};
+		6038B1332A39183C00162C6E /* ViewModels_Mock */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels_Mock;
+			sourceTree = "<group>";
+		};
+		6038B1342A3918C300162C6E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6038B1352A3918E400162C6E /* RESTServiceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6038B1392A391DBB00162C6E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6038B13A2A391E5400162C6E /* UsersList_Mock.swift */,
+				6038B13C2A392A7700162C6E /* Responses_Mock.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		60BE553E2A380711002AC11D = {
 			isa = PBXGroup;
 			children = (
 				60BE55492A380711002AC11D /* UserChatBotPOC */,
+				6038B1232A39123800162C6E /* UserChatBotPOC_UnitTests */,
 				60BE55482A380711002AC11D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				60BE55472A380711002AC11D /* UserChatBotPOC.app */,
+				6038B1222A39123800162C6E /* UserChatBotPOC_UnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +172,7 @@
 		60BE55492A380711002AC11D /* UserChatBotPOC */ = {
 			isa = PBXGroup;
 			children = (
+				6038B1342A3918C300162C6E /* Protocols */,
 				60BE555B2A3807E3002AC11D /* ViewModels */,
 				60BE555A2A3807D4002AC11D /* Models */,
 				60BE55592A3807C8002AC11D /* Views */,
@@ -128,6 +229,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6038B1212A39123800162C6E /* UserChatBotPOC_UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6038B12A2A39123800162C6E /* Build configuration list for PBXNativeTarget "UserChatBotPOC_UnitTests" */;
+			buildPhases = (
+				6038B11E2A39123800162C6E /* Sources */,
+				6038B11F2A39123800162C6E /* Frameworks */,
+				6038B1202A39123800162C6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6038B1272A39123800162C6E /* PBXTargetDependency */,
+			);
+			name = UserChatBotPOC_UnitTests;
+			productName = UserChatBotPOC_UnitTests;
+			productReference = 6038B1222A39123800162C6E /* UserChatBotPOC_UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		60BE55462A380711002AC11D /* UserChatBotPOC */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60BE55552A380714002AC11D /* Build configuration list for PBXNativeTarget "UserChatBotPOC" */;
@@ -155,6 +274,10 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					6038B1212A39123800162C6E = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 60BE55462A380711002AC11D;
+					};
 					60BE55462A380711002AC11D = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -174,11 +297,19 @@
 			projectRoot = "";
 			targets = (
 				60BE55462A380711002AC11D /* UserChatBotPOC */,
+				6038B1212A39123800162C6E /* UserChatBotPOC_UnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6038B1202A39123800162C6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		60BE55452A380711002AC11D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -191,6 +322,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6038B11E2A39123800162C6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6038B1382A3919D000162C6E /* MockRESTService.swift in Sources */,
+				6038B13D2A392A7700162C6E /* Responses_Mock.swift in Sources */,
+				6038B12D2A39129900162C6E /* RESTService_Test.swift in Sources */,
+				6038B13B2A391E5400162C6E /* UsersList_Mock.swift in Sources */,
+				6038B1302A3912CD00162C6E /* UsersViewModel_Test.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		60BE55432A380711002AC11D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,13 +345,58 @@
 				60BE55612A381D6B002AC11D /* UserModel.swift in Sources */,
 				60BE555D2A380907002AC11D /* RESTService.swift in Sources */,
 				60BE55632A38287D002AC11D /* UsersViewModel.swift in Sources */,
+				6038B1362A3918E400162C6E /* RESTServiceProtocol.swift in Sources */,
 				600659AE2A38CC330045942F /* UsersIndexView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		6038B1272A39123800162C6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60BE55462A380711002AC11D /* UserChatBotPOC */;
+			targetProxy = 6038B1262A39123800162C6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		6038B1282A39123800162C6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U3LRV99U6L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kzk.UserChatBotPOC-UnitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UserChatBotPOC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UserChatBotPOC";
+			};
+			name = Debug;
+		};
+		6038B1292A39123800162C6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U3LRV99U6L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kzk.UserChatBotPOC-UnitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UserChatBotPOC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UserChatBotPOC";
+			};
+			name = Release;
+		};
 		60BE55532A380714002AC11D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -384,6 +572,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6038B12A2A39123800162C6E /* Build configuration list for PBXNativeTarget "UserChatBotPOC_UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6038B1282A39123800162C6E /* Debug */,
+				6038B1292A39123800162C6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		60BE55422A380711002AC11D /* Build configuration list for PBXProject "UserChatBotPOC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

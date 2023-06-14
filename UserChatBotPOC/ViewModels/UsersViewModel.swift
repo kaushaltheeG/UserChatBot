@@ -12,11 +12,11 @@ class UsersViewModel: ObservableObject {
     
     @Published var users: [User] = []
     @Published var showUser: User? = nil
-    private let restService: RESTService
+    private let restService: RESTServiceProtocol
     private var cancellables = Set<AnyCancellable>()
     private var url: String = "https://jsonplaceholder.typicode.com/users"
     
-    init(restService: RESTService) {
+    init(restService: RESTServiceProtocol) {
         self.restService = restService
     }
     

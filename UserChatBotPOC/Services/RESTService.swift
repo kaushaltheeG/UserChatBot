@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-final class RESTService: ObservableObject {
+final class RESTService: RESTServiceProtocol {
     
     private var cancellables = Set<AnyCancellable>()
     
